@@ -36,7 +36,6 @@ class Ynspector(object):
     def __init__(self, dir=None, command=None):
         self.dir = dir
         self.command = command
-        self.createDaemon()
     
     def run(self):
         DB = {}
