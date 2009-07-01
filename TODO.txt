@@ -1,0 +1,4 @@
+- Tray icon to configure ynspector.
+- Change color to green/red depending on the exit status code.
+- Monitor many directories, each one with it's own command.
+- Command to kill inspections.	
