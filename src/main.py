@@ -41,7 +41,7 @@ class Ynspector(object):
         DB = {}
         #img = Growl.Image.imageFromPath('./python-logo.gif')
         #growl = Growl.GrowlNotifier(applicationName='ynspector', applicationIcon=img, notifications=[''])
-        growl = Growl.GrowlNotifier(applicationName='ynspector', notifications=[''])
+        growl = Growl.GrowlNotifier(applicationName='ynspector', applicationIcon=None, notifications=[''])
         growl.register()
 
         while True:
