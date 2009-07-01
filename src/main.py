@@ -32,7 +32,7 @@ class Main(object):
     	except OSError, error:
     		CLI.error_and_exit('fork #2 failed: %d (%s)' % (error.errno, error.strerror))
 
-    	Ynspector().run()
+    	Ynspector(self.dir, self.command).run()
     	
 class Ynspector(object):
     def __init__(self, dir=None, command=None):
