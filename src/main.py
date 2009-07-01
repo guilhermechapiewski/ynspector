@@ -67,7 +67,7 @@ class Ynspector(object):
             if changed != '':
                 growl.notify('', 'File changed', changed)
             
-                code = os.system("cd %s && %" % (self.dir, self.command))
+                code = os.system("cd %s && %s" % (self.dir, self.command))
             
                 if code == 0:
                     growl.notify('', 'Test Results', 'Tests passed!')

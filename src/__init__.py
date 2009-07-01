@@ -1,7 +1,7 @@
 from cli import CLI
 from main import Main
 
-version = "0.1.4"
+version = "0.1.6"
 
 def run():
     (options, args) = CLI().parse()
