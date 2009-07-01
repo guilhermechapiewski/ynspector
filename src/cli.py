@@ -1,5 +1,5 @@
+import os
 from optparse import OptionParser
-import sys
 
 class CLI(object):
 
@@ -33,11 +33,11 @@ class CLI(object):
         
     def error_and_exit(self, msg):
         self.msg('[ERROR] %s\n' % msg)
-        sys.exit(1)
+        os._exit(1)
 
     def info_and_exit(self, msg):
         self.msg('%s\n' % msg)
-        sys.exit(0)
+        os._exit(0)
 
     def msg(self, msg):
         print '%s' % msg
