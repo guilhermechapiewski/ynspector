@@ -1,8 +1,9 @@
 from setuptools import setup, find_packages
+from src import version
 
 setup(
     name = "ynspector",
-    version = "0.1.0",
+    version = version,
     packages = ["ynspector"],
     package_dir = {"ynspector": "src"},
     author = "Guilherme Chapiewski",
