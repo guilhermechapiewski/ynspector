@@ -23,7 +23,7 @@ class CLI(object):
                 action='store_true',
                 dest='ynspector_version', 
                 default=False, 
-                help='Displays ynspector's version and exit.')
+                help='Displays ynspector version and exit.')
 
     def get_parser(self):
         return self.__parser
